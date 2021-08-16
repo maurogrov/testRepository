@@ -15,7 +15,7 @@ public class AlertBuilder {
 
     public static func getMessageAlert(title: String, message: String, completion: Completion? = nil, buttonHandler: Completion? = nil) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Aceptar", style: .default, handler: {
+        let action = UIAlertAction(title: "De Acuerdo", style: .default, handler: {
             _ in
             buttonHandler?()
         })
